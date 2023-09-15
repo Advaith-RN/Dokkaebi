@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: "{{primary}}",
+                secondary: "{{secondary}}",
+                accent: "{{accent}}",
+                background: "{{background}}",
+                foreground: "{{foreground}}",
+              }
+            }
+          }
+        }
+      </script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body class="bg-background text-foreground">
+    <main class="mb-8 bg-foreground text-background pl-16 py-8">
+        <h1 class="font-bold text-3xl">{{title}}</h1>  
+        <h2 class="text-lg">{{subtitle}}</h2> 
+    </main>
+    <div class="pl-16">
+      {{content}}
+    <div>
+	<script src="index.js"></script>
+  </body>
+</html>

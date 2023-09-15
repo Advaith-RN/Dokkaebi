@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Sheet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: "#C88CEE",
+                secondary: "#252525",
+                accent: "#FFB33A",
+                background: "#03160F",
+                foreground: "#FBFEFD",
+              }
+            }
+          }
+        }
+      </script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body class="bg-background text-foreground">
+    <main class="mb-8 bg-foreground text-background pl-16 py-8">
+        <h1 class="font-bold text-3xl">Test Sheet</h1>  
+        <h2 class="text-lg">This is a test subtitle</h2> 
+    </main>
+    <div class="pl-16">
+      <h1>Test Heading</h1>
+
+<h2>This is 2</h2>
+
+<h3>This is 3</h3>
+
+<h4>This is 4</h4>
+
+<h5>This is 5</h5>
+
+<p><em>This is italic</em><br>
+<strong>This is bold</strong></p>
+
+<pre><code>#include&lt;stdio.h&gt;
+
+int main()
+{
+    printf("Hello World");
+    return 0;
+}
+</code></pre>
+
+<h2>Lists work like this:</h2>
+
+<ul>
+<li>This is a list too</li>
+<li>This is a list</li>
+<li>This is another list</li>
+</ul>
+
+    <div>
+	<script src="index.js"></script>
+  </body>
+</html>
